@@ -220,4 +220,8 @@ function startGame() {
     timerId = setInterval(moveBall, 10)
 }
 
+restartBtn.addEventListener('click', () =>{
+   location.reload()
+})
+
 

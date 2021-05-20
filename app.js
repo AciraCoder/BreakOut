@@ -162,6 +162,8 @@ function checkForCollisions() {
                 ball.classList.remove('ball')
                 clearInterval(timerId)
                 document.removeEventListener('keydown', moveUser)
+                restartBtn.style.display = 'block'
+                
             }
         }
     }
@@ -185,6 +187,7 @@ function checkForCollisions() {
         result.innerHTML = 'You lose!'
         ball.classList.remove('ball')
         document.removeEventListener('keydown', moveUser)
+        restartBtn.style.display = 'block'
 
     }
 }
@@ -218,6 +221,7 @@ startBtn.addEventListener('click', startGame)
 function startGame() {
     document.addEventListener('keydown', moveUser)
     timerId = setInterval(moveBall, 10)
+    startBtn.style.display = 'none'
 }
 
 restartBtn.addEventListener('click', () =>{

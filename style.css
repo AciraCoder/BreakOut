@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #353333;
+}
+
+.grid {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%, -50%);
+    width: 560px;
+    height: 500px;
+    border: solid white 1px;
+    margin-top: 20px;
+}
+
+.block {
+    position: absolute;
+    width: 18%;
+    height: 5%;
+    border: solid greenyellow 1px;
+    background-color: green;
+}
+
+.user {
+    position: absolute;
+    width: 18%;
+    height: 20px;
+    border: solid grey 1px;
+    background-color: black;
+    z-index: 1;
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: solid orange 1px;
+    background-color: red;
+}
+
+.display {
+    font-size: 40px;
+    position: absolute;
+    color: whitesmoke;
+}
+
+#h {
+    font-size: 40px;
+    color: whitesmoke;
+    padding-right: 10px;
+    position: absolute;
+    top: 10%;
+    left: 9%;
+    transform: translate(-9%, -10%);
+    user-select: none;
+    font-family: monospace;
+}
+
+#result {
+    position: absolute;
+    top: 40%;
+    left: 9%;
+    transform: translate(-9%, -40%);
+    user-select: none;
+    font-family: monospace;
+}
+
+#start {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    height: 7%;
+    user-select: none;
+    width: 10%;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+#restartBtn{
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    height: 7%;
+    user-select: none;
+    width: 10%;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: monospace;
+    cursor: pointer;
+    display: none;
+    outline: none;
+    
+}
